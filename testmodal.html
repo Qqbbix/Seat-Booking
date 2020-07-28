@@ -1,0 +1,71 @@
+
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <center>
+          <h2>กรุณากรอกข้อมูลเพื่อยืนยัน</h2>
+        </center>
+        <br />
+        <hr />
+        <br />
+        <center>
+          <br />
+          <form action="/confirm_page.php" method="post">
+            <center> <table>
+              <tr>
+                <td style="text-align:right">
+                  ที่นั่งที่เลือก :
+                </td>
+                <td>
+                  <div id="selected_seat">A1</div>
+                </td>
+              </tr>
+              <tr>
+                <td style="text-align:right">
+                  ชื่อ-นามสกุล / Fullname :
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    class="input-error"
+                    name="fullName"
+                    id="fullName"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td width="50%">
+                  กรุณากรอกตัวอักษรย่อของแผนกแล้ว<br/>ตามด้วยเลขรหัสพนักงาน 4 ตัวท้าย :
+                </td>
+                <td style="padding: 0px;">
+                  <input style="vertical-align:bottom;"
+                    type="text"
+                    class="input-error"
+                    name="fullName"
+                    id="fullName"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <center>
+                    <br />
+                    <input
+                      type="submit"
+                      name="submit"
+                      value="ตกลง"
+                      class="modal-btn"
+                      id="bt_sub"
+                    />
+                  </center>
+                </td>
+              </tr>
+            </table>
+            </center>
+          </form>
+        </center>
+        <br />
+      </div>
+    </div>
+
