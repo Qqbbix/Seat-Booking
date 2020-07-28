@@ -28,8 +28,11 @@
         break;
         }
     }
-    
-    if($temp==0){
+
+    if($temp==0 &&$code!=null&&$name!=null){
+        echo '<script>console.log("'.$code.'");</script>';
+        echo '<script>console.log("'.$name.'");</script>';
+        echo '<script>console.log("if3");</script>';
 
     $sql = "UPDATE seat SET seat_status='disabled' WHERE seat_id='$id'";
     $stmt = $con->prepare($sql);
