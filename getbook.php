@@ -1,7 +1,7 @@
 <?php
     include 'connect.php';
-    // get status to disable seat
-    $sql = "SELECT * FROM seat ";
+    // get book to check if already book
+    $sql = "SELECT * FROM book";
     $qry = $con->query($sql);
     $myjson = array();
     if($qry){

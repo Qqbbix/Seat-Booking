@@ -35,6 +35,7 @@ ol {
   background: #ddd;
   text-indent: -9999px;
   overflow: hidden;
+  pointer-events: none;
 }
 .seat input[type="checkbox"]:disabled + label:after {
   content: "X";
@@ -42,6 +43,7 @@ ol {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0%);
+  pointer-events: none;
 }
 .seat input[type="checkbox"]:disabled + label:hover {
   box-shadow: none;
