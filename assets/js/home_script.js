@@ -1,6 +1,7 @@
 $(document).ready(function () {
-var span = document.getElementsByClassName("close")[0];
-  var modal = document.getElementById("myModal");  
+  var span = document.getElementsByClassName("close")[0];
+  var ticketSpan = document.getElementsByClassName("modalTicketclose")[0];
+  var modal = document.getElementById("ticket");  
   
   get_disible();
 
@@ -12,6 +13,10 @@ var span = document.getElementsByClassName("close")[0];
   });
 
 span.onclick = function() {
+  modal.style.display = "none";
+}
+
+ticketSpan.onclick = function() {
   modal.style.display = "none";
 }
 

@@ -1,7 +1,7 @@
 .navigation-clean {
   background: #fff;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   color: #333;
   border-radius: 0;
   box-shadow: none;
@@ -120,7 +120,7 @@
 .navigation-clean.navbar-dark .dropdown-menu .dropdown-item:hover {
   background: #363739;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .navigation-clean .navbar-nav .show .dropdown-menu .dropdown-item {
     color: #37434d;
     padding-top: 0.8rem;
