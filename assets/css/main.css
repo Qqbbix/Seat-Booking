@@ -1,0 +1,130 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.col-md-4{
+  padding: 10px 0px 0px 15px;
+  max-width: 33%;
+}
+
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.seats {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+.seat {
+  display: flex;
+  flex: 0 0 14.2857142857%;
+  position: relative;
+}
+.seat:nth-child(10) {
+  margin-right: 14.2857142857%;
+}
+.seat input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.seat input[type="checkbox"]:disabled + label {
+  background: #ddd;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+.seat input[type="checkbox"]:disabled + label:after {
+  content: "X";
+  text-indent: 0;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.seat input[type="checkbox"]:disabled + label:hover {
+  box-shadow: none;
+  cursor: not-allowed;
+}
+.seat label {
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.8rem;
+  background: #ecf266;
+  border-radius: 5px;
+}
+.seat label.se {
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.8rem;
+  background: #F2D4C2;
+  border-radius: 5px;
+}
+
+.seat label:hover {
+  cursor: pointer;
+  box-shadow: 0 0 0px 2px #5c6aff;
+}
+
+.row{
+  max-width: 100%;
+}body{
+  max-width: 100%;
+}
+
+.table td {
+  overflow-wrap: break-word;
+  white-space:pre
+}
+.table {
+  table-layout: fixed;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
